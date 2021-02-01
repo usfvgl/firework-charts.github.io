@@ -4,10 +4,10 @@
 
 import { chartMaker } from './resources/chartMaker.js';
 
-let makeBobas = false;
-let makebooks = false;
+let makeBobas = true;
+let makebooks = true;
 let makeMovies = true;
-let makeSyntetic = false;
+let makeSyntetic = true;
 
 // Prep the chart "stamp" object
 let bobaChart = chartMaker()
