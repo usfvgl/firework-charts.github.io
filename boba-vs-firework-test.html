@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Boba vs Graph Charts Test</title>
+
+        <!-- Import d3 v6 -->
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+
+        <!-- Style for boba -->
+        <link rel="stylesheet" type="text/css" href="./resources/style.css">
+
+        <!-- clustering stuff -->
+        <script src="./resources/clusterfck.js"></script>
+
+    </head>
+    <body class="default">
+
+        <h3>Books Dataset</h3>
+        <svg id="booksVis" class="default"></svg>
+        ___
+        <svg id="booksVisA" class="default"></svg>
+
+        <h3>Movies Dataset</h3>
+        <svg id="moviesVis" class="default"></svg>
+        ___
+        <svg id="moviesVisA" class="default"></svg>
+
+        <h3>Example Synthesized Dataset</h3>
+        <svg id="syntheticVis" class="default"></svg>
+        ___
+        <svg id="syntheticVisA" class="default"></svg>
+
+        <script src="boba-vs-firework-test.js" type="module"></script>
+
+
+    </body>
+</html>
