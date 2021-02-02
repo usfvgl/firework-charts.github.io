@@ -72,7 +72,7 @@ function booksRowConverter(element) {    // Function to convert, filter elements
     return element;
 
 }
-d3.csv("../Real Dataset Investigation/Books/books.csv", booksRowConverter)
+d3.csv("./Real Dataset Investigation/Books/books.csv", booksRowConverter)
     .then(function (data) {
         if (makebooks) {
             d3.select("#booksVis")
@@ -117,7 +117,7 @@ function moviesRowConverter(element) {    // Function to convert, filter element
     return element;
 
 }
-d3.csv("../Real Dataset Investigation/Movies/movies_metadata.csv", moviesRowConverter)
+d3.csv("./Real Dataset Investigation/Movies/movies_metadata.csv", moviesRowConverter)
     .then(function(data) {
         if (makeMovies) {
             d3.select("#moviesVis")
@@ -150,7 +150,7 @@ function syntheticRowConverter(element) {    // Function to convert, filter elem
     return element;
 
 }
-d3.csv("../resources/synthetic6.csv", syntheticRowConverter)
+d3.csv("./resources/synthetic6.csv", syntheticRowConverter)
     .then(function(data) {
         if (makeSyntetic) {
             d3.select("#syntheticVis")
