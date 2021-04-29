@@ -1,0 +1,173 @@
+#chart {
+    width: 600px;
+    margin: 0 auto;
+}
+
+
+/* Style the line separating the legend from the main chart */
+rect.legendDivider {
+    stroke: black;
+    stroke-width: 1;
+    stroke-opacity: 0.8;
+    fill-opacity: 0;
+}
+
+/* Style the border around the legend */
+rect.legendBorder {
+    stroke: black;
+    stroke-width: 1;
+    stroke-opacity: 0.8;
+    fill-opacity: 0;
+}
+
+/* DEFAULT STYLE */
+.default circle.pool {
+    fill: lightblue;
+    stroke: dimgrey;
+}
+/* Make all the text in the visualiaztion have sans serif font */
+.default text {
+    font-family: sans-serif;
+}
+.default circle.pearl {
+    fill: lightslategrey;
+}
+.default rect.legendBorder {
+    fill: none;
+    stroke-opacity: 0;
+}
+svg.default {
+    border:1px solid black;
+}
+.default g#yAxis, .default g#xAxis, .default text.legendSampleValue, .default text#bobaValue  {
+    opacity: 0.5;
+}
+.default text#xTitle, .default text#yTitle, .default text#rTitle, .default text#chartTitle {
+    opacity: 0.8;
+}
+.default rect.background {
+    fill: none;
+}
+
+/* BOBA STYLE */
+.milk-tea circle.pool {
+    fill: antiquewhite;
+    stroke: #222222;
+}
+.milk-tea circle.pearl {
+    fill: #6f6f6f;
+}
+.milk-tea rect.legendDivider {
+    opacity: 0;
+}
+.milk-tea rect.background {
+    fill: none;
+}
+
+/* BRIGHT STYLE */
+.bright circle.pool {
+    fill: darkorange;
+    stroke: dimgrey;
+}
+.bright circle.pearl {
+    fill: antiquewhite;
+}
+.bright rect.legendBorder {
+    fill: lightgrey;
+    fill-opacity: 1;
+    stroke-opacity: 0;
+    opacity: 0;
+}
+.bright rect.legendDivider {
+    /*opacity: 0;*/
+    fill: lightgrey;
+    fill-opacity: 1;
+}
+svg.bright {
+    border:1px solid black;
+}
+.bright rect.background {
+    fill: none;
+}
+
+/* EARTHY STYLE */
+.earthy circle.pool {
+    fill: lightgrey;
+    stroke: dimgrey;
+}
+.earthy circle.pearl {
+    fill: mediumseagreen;
+}
+.earthy text#chartTitle {
+    text-decoration: underline;
+}
+.earthy rect.legendDivider {
+    fill: none;
+    stroke-opacity: 0;
+}
+.earthy rect.legendBorder {
+    fill: lightgrey;
+    fill-opacity: 1;
+}
+svg.earthy#chart {
+    border:1px solid black;
+}
+.earthy rect.background {
+    fill: none;
+}
+/* Make all the text in the visualiaztion have sans serif font */
+.earthy text {
+    font-family: sans-serif;
+}
+
+/* Stuff for firework plots */
+path.link {
+    fill: none;
+    /*Default*/
+    stroke: #B0B0B0;
+    stroke-opacity: 100%;
+    /*Testing Transparency */
+    /*stroke-opacity: 60%;*/
+    /*stroke:grey;*/
+    stroke-width: 1px;
+    pointer-events: none;
+}
+
+circle.fireworkPearl {
+    /*fill: cornflowerblue;*/
+    fill: lightslategrey;
+    /*fill-opacity: 60%;*/
+}
+
+circle.fractional-fireworkPearl {
+    /*fill: none;*/
+    stroke: darkgray;
+    stroke-width: 1px;
+    fill: white;
+    fill-opacity: 100%;
+}
+
+circle.fireworkPearl.highlight {
+    /*fill: cornflowerblue;*/
+    fill: orange;
+    /*fill-opacity: 60%;*/
+}
+circle.fractional-fireworkPearl.highlight {
+    /*fill: none;*/
+    stroke: orange;
+    stroke-width: 1px;
+    fill: white;
+    fill-opacity: 100%;
+}
+
+/* Quadrant Lines */
+line.quadrantLine {
+    stroke : #ffffff;
+    stroke-dasharray : 3;
+    stroke-width : 2;
+}
+
+/* Plot area background */
+rect.chartBackground {
+    fill: lightgray;
+}
