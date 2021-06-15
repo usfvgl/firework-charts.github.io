@@ -37,7 +37,7 @@ rect.legendBorder {
     stroke-opacity: 0;
 }
 svg.default {
-    border:1px solid black;
+    border:0px solid black;
 }
 .default g#yAxis, .default g#xAxis, .default text.legendSampleValue, .default text#bobaValue  {
     opacity: 0.5;
